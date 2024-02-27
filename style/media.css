@@ -1,0 +1,251 @@
+@media(max-width:1300px) {
+    .nav__list{
+        gap: 40px;
+    }
+    .servise{
+        gap: 25px;
+    }
+    .intro__card:nth-of-type(2) {
+        order: -1;
+    }
+    .intro{
+        justify-content: center;
+        text-align: center;
+    }
+    .intro__box{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .intro__card{
+        margin: 0 auto;
+        box-shadow: 0px 0px 15px #dadada;
+    }
+    .intro__card:nth-of-type(2) {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+}
+@media(max-width:1200px) {
+    .nav__list{
+        gap: 35px;
+    }
+    .servise{
+        gap: 20px;
+    }
+}
+@media(max-width:1140px) {
+    .nav__list{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #040D1F;
+        z-index: 9;
+        padding: 40px;
+        height: 500px;
+        align-items: center;
+        transform: translateX(-110%);
+        transition: 0.5s;
+        left: 0;
+        top: 0;
+    }
+    .nav__link{
+        
+        color: #f0f0f0;
+    }
+    .check{
+        display: block;
+    }
+    .menu, .close{
+        display: block;
+    }
+    .servise{
+        order: -1;
+    }
+    .nav__box{
+        flex-direction: row-reverse;
+    }
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    #check:checked~.nav__list {
+        transform: translate(0);
+    }
+    .intro__card img{
+        width: 110px;
+    }
+    .card__center img{
+        width: 270px;
+    }
+    .intro__card{
+        gap: 25px;
+        width: 470px;
+        min-height: 0;
+        height: 100%;
+    }
+    .intro__card:nth-of-type(2) {
+        width: 700px;
+        min-height: 294px;
+    }
+    .intro__box{
+        grid-template-columns: repeat(2,470px);
+    }
+}
+@media(max-width:1000px) {
+    .intro__card{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 325px;
+    }
+    .card__about{
+        gap: 10px;
+    }
+    .intro__card:nth-of-type(2) {
+        flex-direction: row;
+    }
+    .intro__box{
+        grid-template-columns: repeat(2,335px);
+        gap: 25px;
+    }
+}
+@media(max-width:900px) {
+    .nav__logo{
+        font-size: 30px;
+    }
+    .servise__img{
+        display: none;
+    }
+    .servise{
+        gap: 15px;
+    }
+    .nav__box{
+        margin-top: 25px;
+    }
+}
+@media(max-width:750px) {
+    .intro__card{
+        width: 270px;
+    }
+    .intro__card:nth-of-type(2) {
+        max-width: 550px;
+    }
+    .intro__box{
+        grid-template-columns: repeat(2,270px);
+        gap: 20px;
+    }
+    .intro__card img{
+        width: 90px;
+    }
+    .card__center img{
+        width: 200px;
+    }
+}
+@media(max-width:600px) {
+    .nav__logo{
+        font-size: 28px;
+    }
+    .servise{
+        gap: 10px;
+    }
+    .servise a img{
+        width: 15px;
+    }
+    .nav__box{
+        padding-bottom: 5px;
+        margin-top: 15px;
+        border-bottom: 1px solid rgba(50, 50, 50, 1);
+    }
+    .menu, .close{
+        width: 25px;
+    }
+    .intro__card{
+        width: 200px;
+    }
+    .intro__card:nth-of-type(2) {
+        max-width: 420px;
+    }
+    .intro__box{
+        grid-template-columns: repeat(2,200px);
+    }
+    .card__about{
+        gap: 5px;
+    }
+}
+@media(max-width:450px) {
+    .intro__box{
+        margin-top: 27px;
+    }
+    .menu, .close{
+        width: 20px;
+    }
+    .nav__logo{
+        font-size: 25px;
+    }
+    .card__center{
+        display: grid;
+        grid-template-columns: repeat(1,200px);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .card__center img{
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        gap: 0;
+    }
+    .intro__card{
+        gap: 15px;
+    }
+    .intro__card:nth-of-type(2) {
+        width: 300px;
+    }
+    .intro__box{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro__card{
+        width: 300px;
+    }
+    .nav__left{
+        gap: 35px;
+    }
+    .nav__logo{
+        font-size: 23px;
+    }
+}
+@media(max-width:400px) {
+    .intro__box{
+        margin-top: 24px;
+    }
+    .intro__card{
+        width: 250px;
+    }
+    .intro__card:nth-of-type(2) {
+        width: 250px;
+    }
+    .btn{
+        display: none;
+    }
+    .menu{
+        margin-left: 20px;
+    }
+    .nav__left{
+        gap: 30px;
+    }
+    .nav__logo{
+        font-size: 20px;
+    }
+}
+@media(max-width:400px) {
+    .intro__box{
+        margin-top: 20px;
+    }
+    .nav__left{
+        gap: 30px;
+    }
+    .nav__logo{
+        font-size: 18px;
+    }
+}
